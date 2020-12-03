@@ -1,0 +1,289 @@
+@font-face {
+  font-family: NovecentoWideDemiBold;
+  src: url(assets/fonts/NovecentoWideDemiBold.ttf);
+}
+
+@font-face {
+  font-family: NovecentoBookRegular;
+  src: url(assets/fonts/NovecentoBook.ttf);
+}
+
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+body {
+    font-family: 'NovecentoBookRegular' !important;
+}
+
+/* Estilos de SCROLLBAR */
+body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+/* Estilos de NAVBAR */
+
+.navbar {
+    background: #00000042;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar a:hover, .fab:hover {
+    color: white;
+}
+
+.navbar-toggler {
+    position: absolute;
+    right: 1%;
+    top: 20%;
+}
+
+.navbar .active a {
+    width: fit-content; 
+    background: linear-gradient(to bottom, transparent 50%, #fc3636 40%);
+    background-size: contain;
+    background-position: bottom;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 3px 15px !important;
+        line-height: 0.5;
+    }
+}
+
+
+/* Estilos de PAGINAS SECUNDARIAS */
+.body-section {
+    background: #13181d;
+    color: #ffffff;
+}
+
+.titulo {
+    color: #fff;
+    width: fit-content; 
+    background: linear-gradient(to bottom, transparent 70%, #fc3636 30%);
+    line-height: 1.1;
+    margin: auto;
+    letter-spacing: 4px;
+    font-family: 'NovecentoWideDemiBold';
+}
+
+form .btn {
+    background: #fc3636;
+    color: white;
+    border: 1.2px solid #fc3636;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 9px;
+}
+
+form .btn:hover {
+    color: white;
+}
+
+.form-check-inline label {
+    font-size: 0.8rem;
+}
+
+/* Estilos de CONTADOR - CONOCENOS */
+.counter {
+    text-align: center;
+}
+
+.counter h4 {
+    color: #fc3636;
+}
+
+.habitantes,.iglesias,.familias,.order {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.counter-count {
+    font-size: 2.5rem;
+    position: relative;
+    color: #fc3636;
+    text-align: center;
+    line-height: 92px;
+    width: 92px;
+    height: 92px;
+    display: inline-block;
+    text-shadow: 2px 2px 0px #4c4949;
+}
+
+/* Estilos de CARDS - INVOLUCRATE */
+.container-cards {
+	width: 100%;
+	position: relative;
+	display: flex;
+    justify-content: center;
+    overflow: hidden;
+}	
+.container-cards .cards {
+	position: relative;
+    border-radius: 10px;
+    border: none;
+}	
+.container-cards .cards .icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #f00;
+	transition: 0.7s;
+	z-index: 1;
+}	
+
+.container-cards .cards .icono-grupos {
+    background: rgb(27, 201, 70);
+}
+
+.container-cards .cards .icono-voluntarios {
+    background: rgb(224, 210, 82);
+}
+
+.container-cards .cards .icono-invitacion {
+    background: rgb(57, 116, 226);
+}
+
+.container-cards .cards .icono-dar {
+    background: rgb(214, 39, 39);
+}
+
+.container-cards .cards .icon .fa {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 80px;
+	transition: 0.7s;
+	color: #fff;
+}	
+
+.container-cards i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 80px;
+	transition: 0.7s;
+	color: #fff;
+}	
+.container-cards .cards .face {
+	width: 100%;
+	height: 250px;
+	transition: 0.5s;
+}	
+.container-cards .cards .face.face1 {
+	position: relative;
+	background: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	transform: translateY(200px);
+}	
+.container-cards .cards:hover .face.face1 {
+	background: #ff0057;
+	transform: translateY(0px);
+}	
+.container-cards .cards .face.face1 .content {
+	opacity: 1;
+	transition: 0.5s;
+}	
+.container-cards .cards:hover .face.face1 .content {
+	opacity: 1;
+}	
+.container-cards .cards .face.face1 .content i {
+	max-width: 100px;
+}	
+.container-cards .cards .face.face2 {
+	position: relative;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	box-sizing: border-box;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.11);
+	transform: translateY(-50px);
+}	
+.container-cards .cards:hover .face.face2 {
+	transform: translateY(0);
+}	
+.container-cards .cards .face.face2 .content p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+    color: #414141;
+    font-size: 0.85rem;
+}	
+.container-cards .cards .face.face2 .content h4 {
+	margin: 0 0 5px 0;
+	padding: 0;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	color: #414141;
+}	
+.container-cards a {
+	text-decoration: none;
+	color: #414141;
+	transition: 0.5s;
+}	
+
+
+/* Estilos de FOOTER */
+footer {
+    background: #1c1c1c;
+    padding-top: 20px;
+    font-size: 0.85rem;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    padding: 10px;
+}
+
+footer i {
+    padding: 15px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #ff5252;
+    text-decoration: none;
+}
+
+footer .col-4 {
+    align-self: center;
+}
